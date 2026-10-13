@@ -1,7 +1,7 @@
 import styles from './card.module.css'
-export default function CardBody({ children }) {
+export default function CardBody({ children , ...rest}) {
     return(
-        <div className={styles['card-body']}>
+        <div className={styles['card-body']} {...rest}>
             {children}
         </div>
     )

@@ -11,6 +11,11 @@ import CardHeader from '../components/card/CardHeader'
 import CardBody from '../components/card/CardBody'
 import { CiAirportSign1 } from "react-icons/ci";
 import CardContainer from '../components/card/CardContainer'
+import TestimonialsContainer from '../components/testimonials/TestimonialsContainer'
+import TestimonialsBody from '../components/testimonials/TestimonialsBody'
+import TestimonialsImage from '../components/testimonials/TestimonialsImage'
+import TestimonialsText from '../components/testimonials/TestimonialsText'
+import TestimonialsFooter from '../components/testimonials/TestimonialsFooter'
 function App() {
 
   return (
@@ -68,6 +73,19 @@ function App() {
         </CardBody>
       </Card>
       </CardContainer>
+      <TestimonialsContainer>
+        <TestimonialsBody>
+                <TestimonialsText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.
+                </TestimonialsText>
+                <TestimonialsFooter>
+                <div className="name">mohamed masod abozed</div>
+                <div className="position">
+                    <span>Software Engineer</span>
+                </div>
+            </TestimonialsFooter>
+        </TestimonialsBody>
+      </TestimonialsContainer>
     </>
   )
 }
