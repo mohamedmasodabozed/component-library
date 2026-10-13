@@ -5,6 +5,12 @@ import BadgeContainer from '../components/badges/BadgeContainer'
 import Banner from '../components/Banner/Banner'
 import BannerHeader from '../components/Banner/BannerHeader'
 import BannerBody from '../components/Banner/BannerBody'
+import Card from '../components/card/Card'
+import CardIcon from '../components/card/CardIcon'
+import CardHeader from '../components/card/CardHeader'
+import CardBody from '../components/card/CardBody'
+import { CiAirportSign1 } from "react-icons/ci";
+import CardContainer from '../components/card/CardContainer'
 function App() {
 
   return (
@@ -27,6 +33,41 @@ function App() {
           This is a body of the banner. It can contain more information about the banner and can be used to provide additional context to the user.
         </BannerBody> 
       </Banner>
+      <CardContainer axis="x">
+      <Card>
+        <CardIcon>
+          <CiAirportSign1 />
+        </CardIcon>
+        <CardHeader>
+          This is a header
+        </CardHeader>
+        <CardBody>
+          This is a body of the card. It can contain more information about the card and can be used to provide additional context to the user.
+        </CardBody>
+      </Card>
+      <Card>
+        <CardIcon>
+          <CiAirportSign1 />
+        </CardIcon>
+        <CardHeader>
+          This is a header
+        </CardHeader>
+        <CardBody>
+          This is a body of the card. It can contain more information about the card and can be used to provide additional context to the user.
+        </CardBody>
+      </Card>
+      <Card>
+        <CardIcon>
+          <CiAirportSign1 />
+        </CardIcon>
+        <CardHeader>
+          This is a header
+        </CardHeader>
+        <CardBody>
+          This is a body of the card. It can contain more information about the card and can be used to provide additional context to the user.
+        </CardBody>
+      </Card>
+      </CardContainer>
     </>
   )
 }
